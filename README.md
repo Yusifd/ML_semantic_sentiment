@@ -33,12 +33,22 @@ To evaluate performance, I tested both models on **100 Azerbaijani sentences** a
 
 ---
 
-## 📈 Visualization Example
-Below is a heatmap showing sentiment probabilities for Azerbaijani sentences:
+## 📊 Model Performance Comparison
 
-![Sentiment Heatmap](sentiment_heatmap.png)
+| Model | Accuracy Range | Strengths | Weaknesses |
+|-------|----------------|-----------|------------|
+| 🔵 **XLM-Roberta-base sentiment** | **79% – 91%** | Handles Azerbaijani text very well, robust across categories, consistent predictions | Slightly heavier model, requires more resources |
+| 🟢 **BERT-base multilingual uncased sentiment** | **51% – 78%** | Lightweight, faster inference, decent for general multilingual tasks | Struggles with nuanced Azerbaijani expressions, less accurate and less consistent |
 
 ---
+
+### 📝 Key Takeaway
+- **XLM-Roberta** clearly outperforms **BERT-base multilingual** for **Azerbaijani sentiment analysis**.  
+- If accuracy is the priority → go with **XLM-Roberta**.  
+- If speed and lightweight inference matter more → **BERT-base multilingual** can still be used, but expect weaker results.
+
+---
+
 
 ## 🚀 Conclusion
 - **XLM-Roberta** is the better choice for **Azerbaijani sentiment analysis**, offering higher accuracy and more consistent predictions.  
